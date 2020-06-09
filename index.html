@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahorcado</title>
+  <!-- BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body>
+  <div class="container mt-3">
+    <!-- TITLE -->
+    <div id="container-title">
+      <div class="row py-3">
+        <span class="col-2"></span>
+
+        <h1 id="title" class="col-8 text-center">Game Ahorcado</h1>
+
+        <button id="reset" class="col-2 btn btn-color-primary ml-auto text-white">
+          Restart
+        </button>
+      </div>
+
+      <hr class="m-1" />
+    </div>
+    <!-- WORDS -->
+    <div id="container-word">
+      <div class="row">
+        <div id="word" class="col-12 mx-auto my-auto text-center"></div>
+      </div>
+    </div>
+    <!-- IMAGE STATE-->
+    <div id="container-img">
+      <img id="img-state" src="img/OneStage.png" alt="Ahorcado" />
+    </div>
+
+    <!--KEYBOARD-->
+    <div id="keyboard" class="mx-auto mt-2">
+      <!-- AQUI SE INSERTAN LOS BOTONES -->
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal fade" id="modal-center" tabindex="-1" role="dialog" aria-labelledby="modal-center-title"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLongTitle">
+            <span>Puntaje</span>
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-info" id="aciertos"></button>
+              <button type="button" class="btn btn-danger" id="fallos"></button>
+            </div>
+
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body p-5">
+          <img src="img/winner.gif" classs="img-responsive" width="300px" alt="ganador.png">
+          <h2 id="mensaje" class="display-3 text-center"></h2>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="close-modal" class="btn btn-danger" data-dismiss="modal">
+            Cerrar
+          </button>
+          <button type="button" id="reset-game" class="btn btn-primary" data-dismiss="modal">
+            Volver a Jugar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JQUERY JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <!-- POPPER.JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- BOOTSTRAP JS-->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js" type="text/javascript"></script>
+</body>
+
+</html>
